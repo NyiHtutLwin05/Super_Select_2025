@@ -16,12 +16,14 @@ export function Navbar() {
             <div className="flex flex-col">
               <span
                 className="font-['Monument_Extended'] font-extrabold text-4xl"
-                style={{ color: "#69172D" }}>
+                style={{ color: "#69172D" }}
+              >
                 SUPER SELECT
               </span>
               <span
                 className="font-['SF_Pro_Display'] text-lg"
-                style={{ color: "#0E186D" }}>
+                style={{ color: "#0E186D" }}
+              >
                 Glass & Aluminium
               </span>
             </div>
@@ -33,9 +35,6 @@ export function Navbar() {
             </Link>
             <Link href="/about" className="hover:text-primary">
               {t("nav.about")}
-            </Link>
-            <Link href="/gallery" className="hover:text-primary">
-              {t("nav.gallery")}
             </Link>
             <Link href="/contact" className="hover:text-primary">
               {t("nav.contact")}

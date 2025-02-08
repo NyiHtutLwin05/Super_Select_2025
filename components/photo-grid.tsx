@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { cn } from '@/lib/utils';
+import { useState } from "react";
+import Image from "next/image";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { cn } from "@/lib/utils";
 
 interface Photo {
   id: string;
@@ -49,8 +50,14 @@ export function PhotoGrid({ photos }: PhotoGridProps) {
         ))}
       </div>
 
-      <Dialog open={!!selectedPhoto} onOpenChange={() => setSelectedPhoto(null)}>
+      <Dialog
+        open={!!selectedPhoto}
+        onOpenChange={() => setSelectedPhoto(null)}
+      >
         <DialogContent className="max-w-4xl">
+          <DialogTitle asChild>
+            <VisuallyHidden>Photo Viewer</VisuallyHidden>
+          </DialogTitle>
           {selectedPhoto && (
             <div className="relative aspect-video">
               <Image
