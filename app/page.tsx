@@ -8,6 +8,7 @@ import { PhotoGrid } from "@/components/photo-grid";
 import { Menu } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Footer from "./components/Footer";
+import { setDate } from "date-fns";
 
 const CATEGORIES = [
   "All",
@@ -26,7 +27,6 @@ const CATEGORIES = [
   "Smart Mirror",
   "Whole Building",
 ];
-
 const SAMPLE_PHOTOS = [
   {
     id: "1",
@@ -179,6 +179,7 @@ export default function Home() {
         {/* Desktop Categories */}
         <div className="hidden md:block mb-8">
           <div className="relative group">
+            {/* <div className="absolute inset-y-0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z- 10"></div> */}
             {/* <div className="absolute inset-y-0 -0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
           <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-10 flex items-center justify-end">
             <ChevronRight className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
