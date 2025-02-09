@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import Image from "next/image";
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
+            <Image src="/logo.png" alt="logo" width={80} height={80} />
             <div className="flex flex-col">
               <span
                 className="font-['Monument_Extended'] font-extrabold text-4xl"
