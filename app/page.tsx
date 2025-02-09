@@ -22,8 +22,7 @@ const CATEGORIES = [
   "Hand Rail",
   "Mirror",
   "Sensor",
-  "Services Photo",
-  "ShowCase",
+  // "ShowCase",
   "Smart Mirror",
   "Whole Building",
 ];
@@ -117,6 +116,97 @@ const SAMPLE_PHOTOS = [
     url: "/133 Thuwana.jpg",
     category: "Hand Rail",
     title: "Hand Rail",
+  },
+
+  {
+    id: "16",
+    url: "0-02-06-043ad675c78e8fe54ff0a36fdee17721f18bf7e45e1626f4532912949b325622_863ade70.jpg",
+    category: "Mirror",
+    title: "Mirror",
+  },
+  {
+    id: "17",
+    url: "0-02-06-ae65257f5bd816dadd321fd0132996a2082997b931f01afa8b53690b080f50e0_2868ed8a.jpg",
+    category: "Mirror",
+    title: "Mirror",
+  },
+  {
+    id: "18",
+    url: "/12.jpg",
+    category: "Hand Rail",
+    title: "Hand Rail",
+  },
+  {
+    id: "19",
+    url: "/DIAMOND BANK 2024 (1).jpg",
+    category: "Composite",
+    title: "Composite",
+  },
+  {
+    id: "20",
+    url: "/Wave Money.jpg",
+    category: "Glass Partition",
+    title: "Wave Money",
+  },
+  {
+    id: "21",
+    url: "/viber_image_2021-01-19_15-00-08.jpg",
+    category: "Sensor",
+    title: "Sensor",
+  },
+  {
+    id: "22",
+    url: "/viber_image_2021-01-19_15-00-12.jpg",
+    category: "Sensor",
+    title: "Sensor",
+  },
+  {
+    id: "23",
+    url: "/smart/1.jpg",
+    category: "Smart Mirror",
+    title: "Smart Mirror",
+  },
+  {
+    id: "24",
+    url: "/smart/2.jpg",
+    category: "Smart Mirror",
+    title: "Smart Mirror",
+  },
+  {
+    id: "25",
+    url: "/smart/3.jpg",
+    category: "Smart Mirror",
+    title: "Smart Mirror",
+  },
+  {
+    id: "26",
+    url: "2001.jpg",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "27",
+    url: "SeinLeAung.jpg",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "28",
+    url: "Pro-One (HTY).jpg",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "29",
+    url: "ko zwe 9 miles 1.jpg",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "30",
+    url: "Pro 1 TG.jpg",
+    category: "Whole Building",
+    title: "Whole Building",
   },
 ];
 
