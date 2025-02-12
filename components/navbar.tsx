@@ -6,14 +6,13 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
 
 export function Navbar() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b fixed w-full bg-[#E3ECED] z-40">
+    <nav className="border-b fixed w-full bg-[#E3ECED] z-40 select-none outline-none">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -48,27 +47,32 @@ export function Navbar() {
           <LanguageToggle />
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button with Animation */}
         <button
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden flex flex-col space-y-1.5 w-8 h-8 justify-center items-center cursor-pointer select-none bg-none outline-none border-none focus:ring-0 focus:outline-none active:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          <span
+            className={`block w-8 h-[3px] rounded-md bg-black transition-transform duration-300 ease-in-out 
+              ${isOpen ? "rotate-45 translate-y-2.5" : ""}`}
+          />
+          <span
+            className={`block w-8 h-[3px] rounded-md bg-black transition-opacity duration-200 ease-in-out 
+              ${isOpen ? "opacity-0" : "opacity-100"}`}
+          />
+          <span
+            className={`block w-8 h-[3px] rounded-md bg-black transition-transform duration-300 ease-in-out 
+              ${isOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
+          />
         </button>
       </div>
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`fixed inset-y-0 z-30 left-0 w-64 bg-[#E2ECED] transform transition-transform duration-300 ease-in-out
+        className={`fixed inset-y-0 z-30 left-0 w-64 bg-[#E2ECED] transform transition-transform duration-300 ease-in-out 
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex flex-col h-full p-6 space-y-6">
-          <button
-            className="self-end p-2 focus:outline-none"
-            onClick={() => setIsOpen(false)}
-          >
-            <X size={28} />
-          </button>
           <Link
             href="/"
             className="text-lg font-medium hover:text-primary"

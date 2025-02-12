@@ -79,7 +79,9 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="bg-white">
+        <Footer />
+      </div>
     </>
   );
 }

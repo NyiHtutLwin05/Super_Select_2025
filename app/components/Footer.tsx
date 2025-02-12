@@ -4,9 +4,9 @@ const Footer = () => {
   const CurrentYear = new Date().getFullYear();
 
   return (
-    <div className="flex justify-center">
-      <footer className=" mt-7 mb-2 absolute bottom-0">
-        <p className=" text-secondary-text font-light font-serif">
+    <div className="  w-full bg-[#E3ECED]">
+      <footer className="mb-2  bg-[#E3ECED]">
+        <p className="text-center text-secondary-text font-light font-serif">
           &copy; {CurrentYear} All rights reserved. Created by Nyi Htut.
         </p>
       </footer>
