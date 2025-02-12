@@ -252,8 +252,9 @@ export default function Home() {
           {/* Mobile Category Menu */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5" />
+              <Button variant="default">
+                {/* <Menu className="h-5 w-5" /> */}
+                <p>Categories</p>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[80%] sm:w-[385px]">
