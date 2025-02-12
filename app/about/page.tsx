@@ -47,7 +47,7 @@ const About = () => {
                 </div>
 
                 {/* Floating Card */}
-                <div className="absolute -bottom-6 -right-6 p-4 rounded-lg shadow-xl backdrop-blur-sm bg-white/90 transform transition-transform group-hover:translate-y-1">
+                <div className="absolute md:-bottom-6 md:-right-6 p-4 rounded-lg shadow-xl backdrop-blur-sm bg-white/90 transform transition-transform group-hover:translate-y-1">
                   <p className="text-sm font-monument text-primary">
                     Premium Quality
                     <br />
