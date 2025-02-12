@@ -13,15 +13,15 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b bg-white">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className="border-b fixed w-full bg-[#E3ECED] z-40">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/logo.png"
             alt="logo"
-            width={60}
-            height={60}
-            className="md:w-20 md:h-20"
+            width={10}
+            height={10}
+            className="md:w-[3rem] md:h-[3rem] w-[3rem] h-[3rem]"
           />
           <div className="flex flex-col">
             <span className="font-['Monument_Extended'] font-extrabold text-2xl md:text-4xl text-[#69172D]">

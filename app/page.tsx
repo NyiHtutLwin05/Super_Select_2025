@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { PhotoGrid } from "@/components/photo-grid";
-import { Menu } from "lucide-react";
+import { Menu, Filter } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Footer from "./components/Footer";
 import { setDate } from "date-fns";
@@ -213,7 +213,19 @@ const SAMPLE_PHOTOS = [
 export default function Home() {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("All");
+  const [clickedCategory, setClickedCategory] = useState("");
+  {
+    /* Mobile Category Menu */
+  }
+  const [isOpen, setIsOpen] = useState(false);
+  const handleCategoryClick = (category: string) => {
+    setClickedCategory(category);
+    setActiveCategory(category);
 
+    setTimeout(() => {
+      setClickedCategory("");
+    }, 300); // Adjust duration as needed
+  };
   const filteredPhotos =
     activeCategory === "All"
       ? SAMPLE_PHOTOS
@@ -225,9 +237,13 @@ export default function Home() {
         <Button
           key={category}
           variant={activeCategory === category ? "default" : "ghost"}
-          onClick={() => setActiveCategory(category)}
+          onClick={() => {
+            handleCategoryClick(category);
+            setIsOpen(false);
+          }}
           className={`
             whitespace-nowrap px-4 rounded-full transition-all font-['SF_Pro_Display']
+             
             ${
               activeCategory === category
                 ? "bg-primary text-primary-foreground shadow-lg"
@@ -245,16 +261,19 @@ export default function Home() {
     <>
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="font-['Monument_Extended'] text-4xl font-extrabold">
+          {/* <h1 className="font-['Monument_Extended'] text-4xl font-extrabold">
             {t("company.name")}
-          </h1>
+          </h1> */}
 
           {/* Mobile Category Menu */}
-          <Sheet>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="default">
-                {/* <Menu className="h-5 w-5" /> */}
-                <p>Categories</p>
+          {/* <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidde fixed z-30 right-5">
+              <Button
+                variant="ghost"
+                className="bg-transparent hover:bg-transparent p-2 border"
+                onClick={() => setIsOpen(true)}
+              >
+                <Filter className="h-5 w-5 text-white hover:text-gray-800" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[80%] sm:w-[385px]">
@@ -264,26 +283,29 @@ export default function Home() {
                 </div>
               </ScrollArea>
             </SheetContent>
-          </Sheet>
+          </Sheet> */}
         </div>
 
         {/* Desktop Categories */}
-        <div className="hidden md:block mb-8">
+        <div className="">
           <div className="relative group">
             {/* <div className="absolute inset-y-0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z- 10"></div> */}
             {/* <div className="absolute inset-y-0 -0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
           <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-10 flex items-center justify-end">
             <ChevronRight className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
           </div> */}
-            <div className="">
-              <div className="flex gap-2 pb-4 overflow-x-auto custom-scrollbar-x ">
-                <CategoryButtons />
+            <div className="mb-3">
+              <div className="relative group">
+                <div className="flex gap-1 fixed top-16 md:top-[84px] md:w-full w-[350px] bg-[#E3ECED] z-30 overflow-x-auto border md:border-none md:rounded-none px-2 py-2 rounded-md custom-scrollbar-x snap-x scroll-smooth">
+                  <CategoryButtons />
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <PhotoGrid photos={filteredPhotos} />
+        <div className="mt-20">
+          <PhotoGrid photos={filteredPhotos} />
+        </div>
       </div>
       {/* <Footer /> */}
     </>
