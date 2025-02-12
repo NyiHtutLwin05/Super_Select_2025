@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="bg-background text-foreground">
       {/* Hero Section */}
-      <div className="min-h-screen py-20 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+      <div className=" pt-20 pb-10 px-4 md:px-8 lg:px-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 pointer-events-none" />
         <div className="max-w-7xl mx-auto relative">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
