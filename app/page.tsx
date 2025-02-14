@@ -242,14 +242,13 @@ export default function Home() {
             setIsOpen(false);
           }}
           className={`
-            whitespace-nowrap px-4 rounded-full transition-all font-['SF_Pro_Display']
-             
-            ${
-              activeCategory === category
-                ? "bg-primary text-primary-foreground shadow-lg"
-                : "hover:bg-primary/10 hover:text-primary"
-            }
-          `}
+                whitespace-nowrap px-4 rounded-full transition-all font-['SF_Pro_Display']
+                ${
+                  activeCategory === category
+                    ? "bg-primary text-primary-foreground shadow-lg blinking-effect"
+                    : "hover:bg-primary/10 hover:text-primary"
+                }
+              `}
         >
           {category}
         </Button>
@@ -260,43 +259,13 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center justify-between mb-8">
-          {/* <h1 className="font-['Monument_Extended'] text-4xl font-extrabold">
-            {t("company.name")}
-          </h1> */}
+        <div className="flex items-center justify-between mb-8"></div>
 
-          {/* Mobile Category Menu */}
-          {/* <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidde fixed z-30 right-5">
-              <Button
-                variant="ghost"
-                className="bg-transparent hover:bg-transparent p-2 border"
-                onClick={() => setIsOpen(true)}
-              >
-                <Filter className="h-5 w-5 text-white hover:text-gray-800" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[80%] sm:w-[385px]">
-              <ScrollArea className="h-[calc(100vh-4rem)] mt-4">
-                <div className="flex flex-col gap-2 pr-4">
-                  <CategoryButtons />
-                </div>
-              </ScrollArea>
-            </SheetContent>
-          </Sheet> */}
-        </div>
-
-        {/* Desktop Categories */}
         <div className="">
           <div className="relative group">
-            {/* <div className="absolute inset-y-0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z- 10"></div> */}
-            {/* <div className="absolute inset-y-0 -0 w-12 bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
-          <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent pointer-events-none z-10 flex items-center justify-end">
-            <ChevronRight className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-          </div> */}
             <div className="mb-3">
               <div className="relative group">
-                <div className="flex gap-1 fixed top-16 md:top-[84px] md:w-full w-[350px] bg-[#E3ECED] z-30 overflow-x-auto border md:border-none md:rounded-none px-2 py-2 rounded-md custom-scrollbar-x snap-x scroll-smooth">
+                <div className="flex gap-1 fixed top-16 md:top-[84px] md:w-full w-[358px] bg-[#E3ECED] z-30 overflow-x-auto  md:border-none md:rounded-none px-2 py-2  custom-scrollbar-x snap-x scroll-smooth">
                   <CategoryButtons />
                 </div>
               </div>

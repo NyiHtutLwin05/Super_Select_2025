@@ -176,3 +176,16 @@
     @apply bg-primary/60;
   }
 }
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.blinking-effect {
+  animation: blink 1.5s infinite; /* Apply blinking animation */
+}
