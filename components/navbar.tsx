@@ -17,7 +17,7 @@ export function Navbar() {
     pathname === path ? "text-primary font-bold" : "hover:text-primary";
 
   return (
-    <nav className="border-b fixed w-full bg-[#E3ECED] z-40 select-none outline-none">
+    <nav className="border-b fixed w-full bg-background z-40 select-none outline-none">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -28,10 +28,10 @@ export function Navbar() {
             className="md:w-[3rem] md:h-[3rem] w-[3rem] h-[3rem]"
           />
           <div className="flex flex-col">
-            <span className="font-['Monument_Extended'] font-extrabold text-2xl md:text-4xl text-[#69172D]">
+            <span className="font-['Monument_Extended'] font-extrabold text-2xl md:text-4xl text-primary">
               SUPER SELECT
             </span>
-            <span className="font-['SF_Pro_Display'] text-sm md:text-lg text-[#0E186D]">
+            <span className="font-['SF_Pro_Display'] text-sm md:text-lg text-secondary">
               Glass & Aluminium
             </span>
           </div>
@@ -58,16 +58,16 @@ export function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span
-            className={`block w-8 h-[3px] rounded-md bg-black transition-transform duration-300 ease-in-out 
-              ${isOpen ? "rotate-45 translate-y-2.5" : ""}`}
+            className={`block w-8 h-[3px] rounded-md bg-foreground dark:bg-white transition-transform duration-300 ease-in-out 
+              ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`}
           />
           <span
-            className={`block w-8 h-[3px] rounded-md bg-black transition-opacity duration-200 ease-in-out 
+            className={`block w-8 h-[3px] rounded-md bg-foreground dark:bg-white  transition-opacity duration-200 ease-in-out 
               ${isOpen ? "opacity-0" : "opacity-100"}`}
           />
           <span
-            className={`block w-8 h-[3px] rounded-md bg-black transition-transform duration-300 ease-in-out 
-              ${isOpen ? "-rotate-45 -translate-y-2.5" : ""}`}
+            className={`block w-8 h-[3px] rounded-md bg-foreground dark:bg-white  transition-transform duration-300 ease-in-out 
+              ${isOpen ? "-rotate-45 -translate-y-[11px]" : ""}`}
           />
         </button>
       </div>
@@ -82,7 +82,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`fixed inset-y-0 left-0 w-64 bg-[#E2ECED] shadow-lg transform transition-transform duration-300 ease-in-out z-30
+        className={`fixed inset-y-0 left-0 w-64 bg-background shadow-lg transform transition-transform duration-300 ease-in-out z-30
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex flex-col h-full p-6 space-y-6">

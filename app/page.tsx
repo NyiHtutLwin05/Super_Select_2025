@@ -265,7 +265,7 @@ export default function Home() {
           <div className="relative group">
             <div className="mb-3">
               <div className="relative group">
-                <div className="flex gap-1 fixed top-16 md:top-[84px] md:w-full w-[358px] bg-[#E3ECED] z-30 overflow-x-auto  md:border-none md:rounded-none px-2 py-2  custom-scrollbar-x snap-x scroll-smooth">
+                <div className="flex gap-1 fixed top-16 md:top-[84px] md:w-full w-[400px] bg-background z-30 overflow-x-auto  md:border-none md:rounded-none px-2 py-2  custom-scrollbar-x snap-x scroll-smooth">
                   <CategoryButtons />
                 </div>
               </div>
