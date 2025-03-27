@@ -246,20 +246,14 @@ const SAMPLE_PHOTOS = [
     title: "Folding",
   },
   {
-    id: "36",
+    id: "37",
     url: "Folding (8).jpg",
     category: "Aluminium",
     title: "Folding",
   },
   {
-    id: "37",
-    url: "Folding (9).jpg",
-    category: "Aluminium",
-    title: "Folding",
-  },
-  {
     id: "38",
-    url: "Folding (1).jpg ",
+    url: "Folding (9).jpg",
     category: "Aluminium",
     title: "Folding",
   },
@@ -271,21 +265,147 @@ const SAMPLE_PHOTOS = [
   },
   {
     id: "40",
-    url: "Image010.jpg ",
+    url: "Folding (1).jpg ",
     category: "Aluminium",
     title: "Folding",
   },
   {
     id: "41",
+    url: "Image010.jpg ",
+    category: "Aluminium",
+    title: "Closet",
+  },
+  {
+    id: "43",
     url: "Image013.jpg ",
+    category: "Aluminium",
+    title: "Closet",
+  },
+  {
+    id: "44",
+    url: "Folding (2).jpg ",
     category: "Aluminium",
     title: "Folding",
   },
   {
-    id: "42",
-    url: "Folding (2).jpg ",
+    id: "45",
+    url: "Image016.jpg ",
     category: "Aluminium",
-    title: "Folding",
+    title: "Aluminium",
+  },
+  {
+    id: "46",
+    url: "Image019.jpg ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "47",
+    url: "Image020.jpg ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "48",
+    url: "Image022.jpg ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "49",
+    url: "Image062.jpg ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "50",
+    url: "IMG_0005.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "51",
+    url: "IMG_0009.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "52",
+    url: "IMG_0010.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "53",
+    url: "IMG_0018.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "54",
+    url: "IMG_0023.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "55",
+    url: "IMG_0030.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "56",
+    url: "IMG_0040.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "57",
+    url: "IMG_0041.JPG ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "58",
+    url: "IMG_0054.JPG ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "59",
+    url: "IMG_0055.JPG ",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "60",
+    url: "IMG_0168.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "61",
+    url: "IMG_0189.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "62",
+    url: "IMG_0200.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "63",
+    url: "IMG_0224.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
+  },
+  {
+    id: "64",
+    url: "IMG_0231.JPG",
+    category: "Aluminium",
+    title: "Aluminium",
   },
 ];
 
@@ -355,7 +475,6 @@ export default function Home() {
           <PhotoGrid photos={filteredPhotos} />
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }
