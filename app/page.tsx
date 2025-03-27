@@ -12,9 +12,11 @@ import { setDate } from "date-fns";
 
 const CATEGORIES = [
   "All",
-  "Aluminium",
-  "Bathroom",
   "Buddha",
+  "Aluminium",
+  "Whole Building",
+  "Bathroom",
+
   "Canopy",
   "Composite",
   "Glass Partition",
@@ -24,7 +26,6 @@ const CATEGORIES = [
   "Sensor",
   // "ShowCase",
   "Smart Mirror",
-  "Whole Building",
 ];
 const SAMPLE_PHOTOS = [
   {
@@ -508,6 +509,174 @@ const SAMPLE_PHOTOS = [
     url: "1616676366992.jpg",
     category: "Bathroom",
     title: "Bathroom",
+  },
+  {
+    id: "82",
+    url: "2007.JPG",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "83",
+    url: "2007 (2).JPG",
+    category: "Whole Building",
+    title: "Whole Building",
+  },
+  {
+    id: "84",
+    url: "2005 MLM.jpg",
+    category: "Whole Building",
+    title: "Buddha",
+  },
+  {
+    id: "85",
+    url: "2007 KPK.jpg",
+    category: "Whole Building",
+    title: "Buddha",
+  },
+  {
+    id: "86",
+    url: "2007 KPK.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "87",
+    url: "2005 MLM.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "88",
+    url: "BTT FOOT PRINT 1.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "89",
+    url: "BTT FOOT PRINT 2.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "90",
+    url: "BTT FOOT PRINT 3.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "91",
+    url: "BTT FOOT PRINT 4.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "92",
+    url: "BTT FOOT PRINT 5.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "93",
+    url: "BTT FOOT PRINT 6.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "94",
+    url: "BTT FOOT PRINT 7.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "95",
+    url: "BTT FOOT PRINT 8.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "96",
+    url: "BTT FOOT PRINT.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "97",
+    url: "global.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "98",
+    url: "global2.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "99",
+    url: "Image007.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "100",
+    url: "Image007.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "101",
+    url: "IMG_0517.JPG",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "102",
+    url: "KHAYA 3.jpg ",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "103",
+    url: "khaya.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "104",
+    url: "M MYA.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "105",
+    url: "Myaing.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "106",
+    url: "NPT7.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "107",
+    url: "NPT7.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "108",
+    url: "Shin thi wari 1.jpg",
+    category: "Buddha",
+    title: "Buddha",
+  },
+  {
+    id: "109",
+    url: "SU SU PHOTO 240.jpg",
+    category: "Buddha",
+    title: "Buddha",
   },
 ];
 
