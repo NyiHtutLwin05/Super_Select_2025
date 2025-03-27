@@ -15,8 +15,8 @@ const CATEGORIES = [
   "Buddha",
   "Aluminium",
   "Whole Building",
+  "Smart Mirror",
   "Bathroom",
-
   "Canopy",
   "Composite",
   "Glass Partition",
@@ -25,7 +25,6 @@ const CATEGORIES = [
   "Mirror",
   "Sensor",
   // "ShowCase",
-  "Smart Mirror",
 ];
 const SAMPLE_PHOTOS = [
   {
