@@ -407,6 +407,108 @@ const SAMPLE_PHOTOS = [
     category: "Aluminium",
     title: "Aluminium",
   },
+  {
+    id: "65",
+    url: "14 Street.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "66",
+    url: "2011-06-20 12.31.06.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "67",
+    url: "2011-06-20 12.31.29.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "68",
+    url: "20140428_143916.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "69",
+    url: "20140428_144056.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "70",
+    url: "20140428_144627.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "71",
+    url: "20140708_165015.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "72",
+    url: "20140723_111222.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "73",
+    url: "20190109_152603.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "74",
+    url: "20190109_153102.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "75",
+    url: "20140821_133521.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "76",
+    url: "20190102_110503.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "77",
+    url: "20190102_111046.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "78",
+    url: "20190109_153102.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "79",
+    url: "20190109_152603.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "80",
+    url: "1616646431754.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
+  {
+    id: "81",
+    url: "1616676366992.jpg",
+    category: "Bathroom",
+    title: "Bathroom",
+  },
 ];
 
 export default function Home() {
