@@ -208,6 +208,37 @@ const SAMPLE_PHOTOS = [
     category: "Whole Building",
     title: "Whole Building",
   },
+  {
+    id: "31",
+    url: "Folding (1).jpg",
+    category: "Aluminium",
+    title: "Folding",
+  },
+  {
+    id: "32",
+    url: "Folding (2).jpg",
+    category: "Aluminium",
+    title: "Folding",
+  },
+
+  {
+    id: "33",
+    url: "Folding (4).jpg",
+    category: "Aluminium",
+    title: "Folding",
+  },
+  {
+    id: "34",
+    url: "Folding (5).jpg",
+    category: "Aluminium",
+    title: "Folding",
+  },
+  {
+    id: "35",
+    url: "Folding (6).jpg",
+    category: "Aluminium",
+    title: "Folding",
+  },
 ];
 
 export default function Home() {
